@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="logotitle.png"/>
+        <title>musico</title>
+    </head>
+    <body>
+        <!-- MENU -->
+        <div class="logo">
+            <img src="musico.png" alt=""/>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Beranda</a></li>
+                <li><a href="">Eksplorasi</a></li>
+                <li><a href="">Feed</a></li>
+                <li><a href="">Playlistku</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="">Log in</a>
+            <a href="#" class="button">Sign up</a>
+        </div>
+        <!-- MENU END -->
+
+        <!--BERANDA -->
+        <div id=beranda>
+
+        <!-- slider -->
+        <div class="header">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="4.jpg">
+                    </div>
+
+                    <div class="auto-navi">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                    <div class="manual-navi">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider end -->
+
+        <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        }, 5000);
+        </script>
+
+        <!--bside content-->
+        <aside>
+        <div class="musik top">
+            <h1>Musik Top</h1>
+            <img src="play.png">
+            <h3>Judul Lagu</h3>
+            <p>Artis</p>
+        </div>
+
+        <div class="artis rekom">
+            <h1>Rekomendasi Artis</h1>
+            <img src="artis/1.jpg">
+            <h3>Nama Artis</h3>
+        </div>
+        </aside>
+        <!--bside content end-->
+
+        <!--cards-->
+        <div class="cards">
+            <div class="playlist km"><h1>Dari playlist kamu</h1></div>div>
+            <div>
+                <img src="album/1.jpg">
+                <h2>Playlist 1</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div>
+                <img src="album/2.jpg">
+                <h2>Playlist 2</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div>
+                <img src="album/3.jpg">
+                <h2>Playlist 3</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+
+            <div class="rekomendasi">
+                <h1>Rekomendasi untukmu</h1>
+                <p>Berdasarkan aktivitas terkini</p>
+            </div>div>
+            <div>
+                <img src="album/1.jpg">
+                <h2>Playlist 1</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div>
+                <img src="album/2.jpg">
+                <h2>Playlist 2</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div>
+                <img src="album/3.jpg">
+                <h2>Playlist 3</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+
+            <div class="trending">
+                <h1>Trending</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div>
+                <img src="album/1.jpg">
+                <h2>Playlist 1</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div>
+                <img src="album/2.jpg">
+                <h2>Playlist 2</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <div>
+                <img src="album/3.jpg">
+                <h2>Playlist 3</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+
+        </div>
+        <!--cards-->
+        </div>
+        <!--BERANDA end -->
+    </body>
+</html>
